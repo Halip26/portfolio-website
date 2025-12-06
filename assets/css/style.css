@@ -1,0 +1,108 @@
+/* Custom Styles for Portfolio Website */
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body Styling */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Navbar Enhancements */
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.9);
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #fff;
+}
+
+/* Projects Section */
+#projects {
+  background: linear-gradient(135deg, #dc3545 0%, #c82333 100%);
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* About Section */
+#about {
+  background-color: #e9ecef;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.img-thumbnail.border-white {
+  border-color: #fff !important;
+}
+
+/* Footer Styling */
+footer {
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.footer-link {
+  color: crimson;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  color: #ff1744;
+}
+
+/* Responsive Design Enhancements */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.1rem;
+  }
+
+  .display-4 {
+    font-size: 2rem;
+  }
+
+  .card-img-top {
+    height: 180px;
+  }
+}
+
+/* Additional Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  animation: fadeInUp 0.8s ease-out;
+}
