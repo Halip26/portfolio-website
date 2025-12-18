@@ -53,6 +53,13 @@ body {
   text-align: justify;
 }
 
+.img-thumbnail {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-width: 5px !important;
+}
+
 .img-thumbnail.border-white {
   border-color: #fff !important;
 }
